@@ -1,17 +1,24 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <v-main>
+      <v-container>
+        <!-- <password-with-meter></password-with-meter> -->
+        <password-with-meter-vee-validate></password-with-meter-vee-validate>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import PasswordWithMeter from './components/PasswordWithMeter.vue'
+import PasswordWithMeterVeeValidate from './components/PasswordWithMeterVeeValidate.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PasswordWithMeterVeeValidate
   }
 }
 </script>
